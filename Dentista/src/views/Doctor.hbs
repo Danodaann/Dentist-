@@ -1,0 +1,81 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+{{>nav}}
+<body>
+  <br><br><br><br>
+<div class="container">
+    {{>messages}}
+    <div class="jumbotron mt-4">
+        {{#if user.Sexo}}
+        <h1 class="display-4">Bienvenida Doctora {{user.Nombre}}!</h1>
+        {{else}}
+        <h1 class="display-4">Bienvenido Doctor {{user.Nombre}}!</h1>
+        {{/if}}
+      <p class="lead">Desde aqui puedes agregar nuevos pacientes, gestionarlos y consultar su estado dental.</p>
+      <hr class="my-4">
+
+
+        <div class="contenedor">
+    <div class="contenedor_tarjeta">
+      <p> MIS PACIENTES </p>
+      <a href="/Doctor/Pacientes" role="button">
+        <figure id="tarjeta">
+          <img src="img/1.jpg" class="frontal" alt="">
+          <figcaption class="trasera">
+            <h2 class="titulo">MIS PACIENTES</h2>
+            <hr>
+            <p>En esta seccion puedes ver y editar los datos de tus pacientes actuales...</p>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    
+    <div class="contenedor_tarjeta">
+      <p> NUEVO PACIENTE </p>
+      <a href="/Doctor/Pacientes/NuevoP">
+        <figure id="tarjeta">
+          <img src="img/2.jpg" class="frontal" alt="">
+          <figcaption class="trasera">
+            <h2 class="titulo">AGREGAR PACIENTE</h2>
+            <hr>
+            <p>En esta seccion puedes dar de alta a tus nuevos pacientes...</p>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <div class="contenedor_tarjeta">
+      <p> CITAS | NOTAS </p>
+      <a href="/Doctor/Notas">
+        <figure id="tarjeta">
+          <img src="img/3.jpg" class="frontal" alt="">
+          <figcaption class="trasera">
+            <h2 class="titulo"> CITAS | NOTAS </h2>
+            <hr>
+            <p>Aqui puedes ver las notas actuales, asi como agrega nuevas.</p>
+          </figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+</body> 
+
+
+
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilosss.css">
+
+<body>
+
+</body>
